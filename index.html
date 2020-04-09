@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS-3 PASSKEY | PDB</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table mt-5">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">NIM</th>
+                        <th scope="col">Passkey</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table-data">
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let passkey = {"Sheet1":[{"No":"1","NIM":"10517087"},{"No":"2","NIM":"10517089"},{"No":"3","NIM":"10518066"},{"No":"4","NIM":"10518086"},{"No":"5","NIM":"10518087"},{"No":"6","NIM":"10518089"},{"No":"7","NIM":"10518090"},{"No":"8","NIM":"10518091"},{"No":"9","NIM":"10518092"},{"No":"10","NIM":"10518094"},{"No":"11","NIM":"10518095"},{"No":"12","NIM":"10518096"},{"No":"13","NIM":"10518097"},{"No":"14","NIM":"10518098"},{"No":"15","NIM":"10518100"},{"No":"16","NIM":"10518101"},{"No":"17","NIM":"10518102"},{"No":"18","NIM":"10518103"},{"No":"19","NIM":"10518105"},{"No":"20","NIM":"10518106"},{"No":"21","NIM":"10518107"},{"No":"22","NIM":"10518108"},{"No":"23","NIM":"10518109"},{"No":"24","NIM":"10518110"},{"No":"25","NIM":"10518111"},{"No":"26","NIM":"10518112"},{"No":"27","NIM":"10518113"},{"No":"28","NIM":"10518114"},{"No":"29","NIM":"10518115"},{"No":"30","NIM":"10518116"},{"No":"31","NIM":"10518117"},{"No":"32","NIM":"10518119"},{"No":"33","NIM":"10518120"},{"No":"34","NIM":"10518121"},{"No":"35","NIM":"10518122"},{"No":"36","NIM":"10518123"},{"No":"37","NIM":"10518906"}]};
+        for (let i = 0; i < passkey.Sheet1.length; i++) {
+            let row = "<tr><th scope='row'>"+passkey.Sheet1[i].No+"</th><td>"+passkey.Sheet1[i].NIM+"</td><td>#</td></tr>"
+            $("#table-data").append(row);
+        }
+    </script>
+</body>
+</html>
+
+
